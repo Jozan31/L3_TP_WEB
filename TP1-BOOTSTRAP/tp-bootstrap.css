@@ -1,0 +1,45 @@
+body{
+  background-image: url("https://images4.alphacoders.com/600/thumb-1920-600528.png");
+  color: white !important;
+}
+
+.container {
+  position: relative;
+}
+
+.row {
+  height: 30%;
+  margin-bottom: 2%;
+}
+
+.col-md-4 {
+  perspective: 1000px;
+  transition: 2s;
+	transform-style: preserve-3d;
+}
+
+.col-md-4:hover {
+  transform: translateX(4%) rotateY( 180deg );
+}
+
+.navbar-default{
+  background-color: rgb(0,0,63) !important;
+  border-color: rgb(0,0,63) !important;
+  border-radius: 0px !important;
+}
+
+.thumbnail {
+  background-color: rgb(0,0,63) !important;
+  border-color: rgb(0,0,63) !important;
+  transition: 2s !important;
+	position: relative;
+}
+
+.front, .back {
+  position: absolute;
+  backface-visibility: hidden !important;
+}
+
+.front {
+	transform: rotateY(180deg);
+}
