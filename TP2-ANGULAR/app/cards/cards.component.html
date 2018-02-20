@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-xs-6 thumb" *ngFor="let card of cards">
+      <a class="thumbnail" href="#">
+          <img class="img-responsive" src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{card[1].key}}_{{card[1].num}}.jpg" alt="">
+          <div class="champName">{{card[1].key}}</div>
+      </a>
+    </div>
+  </div>
+</div>
